@@ -15,41 +15,12 @@
             <div class="output">0</div>
             <div class="controls">
                 <button onclick="Reduce()" class="decrease">LOWER COUNT</button>
-                <button onclick="Increase()"  class="increase">HIGHER COUNT </button>
+                <button onclick="Increase()"  class="increase">ADD COUNT </button>
             </div>
             
         </div>
         
     </body>
-    <script>
-        let increaseBtn = document.querySelector('.increase')
-        let decreaseBtn = document.getElementsByClassName('decrease')
-        
-        let outputBox = document.querySelector('.output')
-        let num = Number(outputBox.textContent)
-        
-        function Reduce(i){
-                num--
-                outputBox.textContent = num
-                numberColor()
-        }
-        
-        function Increase(i){
-                num = Number(outputBox.textContent)
-                num++
-                outputBox.textContent = num
-                numberColor()
-        
-        }
-        function numberColor(){
-            if(num < 0){
-                outputBox.style.color = 'red'
-            }
-            else if(num > 0){
-                outputBox.style.color = 'rgb(15,234,17)'
-            }else{
-                outputBox.style.color = '#311'
-            }
-        }
-    </script>
+         <script src="script.js"></script>
+
 </html>

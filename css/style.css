@@ -1,14 +1,22 @@
 
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+}
 body{
     background-image: url("../images/background-image.jpg");
 	background-position: top center;
-	 background-size: 100vw 100vh; 
+	background-size: 100vw 100vh; 
+    border-radius: 5px;
+    background-repeat: no-repeat;
 	display: flex;
 	justify-content :center;
-	 height: 100vh; 
+	height: 100vh; 
 	align-items: center;
     font-family: Times, 'Times New Roman', serif;
-
+    flex-wrap: wrap;
 }
 .card-counter{
     border: 2px solid white;
@@ -19,49 +27,61 @@ body{
     padding: 10px 20px;
     border-radius: 4px;
     font-family: 'Times New Roman', Times, serif;
-    box-shadow: 2px 3px 3px white;
-}
+    box-shadow: 3px 3px 3px white; 
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
 
+}
+h2{
+    color: white;
+}
 h2,.output{
     text-align: center;
     font-size: 250%;
-    color: rgb(17, 15, 15);
+    
     padding: 15px 0;
 }
-.output{
+.output {
     font-size: 1100%;
     margin: 0;
     font-weight: 900;
     font-family: Times, 'Times New Roman', serif;
+    color: #008000;
+    justify-content: center;
 }
 
 .controls{
-    display: flex;
-    justify-content: space-evenly;
-    margin-top: 50px;
+        display: flex;
+        align-content: center;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        flex-wrap: wrap;
+    
 }
-
 .controls button{
+    display: block;
     padding: 14px 18px;
     margin: 20px 10px;
     border-radius: 8px;
-    font-weight: 900;
+    font-weight: 450;
     outline: none;
+    font-size: 180%;
+    background: #10386b;
+    color: white;
+    border: none;
+
 }
 .controls button:hover{
-    background-color: rgb(238, 226, 226);
-    box-shadow: 4px 4px 4px black;
-    color: black;
+    background-color: cornflowerblue;
     font-weight: 700;
 
 }
-.decrease{
-    background-color: rgb(155, 27, 52);
-    color: ghostwhite;
-}
-.increase{
-    background-color: rgb(37, 220, 20);
-    color: ghostwhite;
-}
 
 
+@media (max-width: 400px) {
+    .card-container {
+        width: 90%;
+    }
+}
